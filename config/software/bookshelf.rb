@@ -16,7 +16,7 @@
 #
 
 name "bookshelf"
-version "0.2.1"
+version "hh/OC-5867/bookshelf_request_logger"
 
 dependency "erlang"
 dependency "rebar"
