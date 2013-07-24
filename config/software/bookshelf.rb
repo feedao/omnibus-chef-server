@@ -16,7 +16,7 @@
 #
 
 name "bookshelf"
-version "hh/OC-5867/bookshelf_request_logger"
+version "hh/OC-9093/reqid-logging"
 
 dependency "erlang"
 dependency "rebar"
