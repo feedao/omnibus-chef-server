@@ -16,7 +16,8 @@
                {oc_wm_request_logger, [
                        {file, "<%= File.join(@log_directory, 'requests.log') %>"},
                        {file_size, 100},  %% Size in MB
-                       {files, 5}
+                       {files, 5},
+                       {annotations, [{reqid, "req_id"}]}
                           ]
                       }]
               } ]
@@ -27,6 +28,7 @@
                       "<%= @secret_access_key %>"}},
               {disk_store, "<%= @data_dir %>"},
               {stream_download, <%= @stream_download %>},
+              {reqid_header_name, "X-Request-Id"},
               {log_dir, "<%= @log_directory %>"}
              ]}
 ].
